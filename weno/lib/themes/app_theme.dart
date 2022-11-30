@@ -6,7 +6,8 @@ class AppTheme {
       yellowLow = Color.fromRGBO(254, 248, 187, 1),
       black = Color.fromRGBO(33, 26, 29, 1),
       white = Colors.white,
-      whiteLow = Color.fromRGBO(255, 255, 255, .5);
+      whiteLow = Color.fromRGBO(255, 255, 255, .5),
+      red = Color.fromRGBO(255, 87, 20, 1);
 
   static final ThemeData theme = ThemeData.light().copyWith(
     primaryColor: yellow,

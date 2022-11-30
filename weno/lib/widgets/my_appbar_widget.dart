@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
-import 'package:weno/providers/_providers.dart';
 
+import 'package:weno/providers/_providers.dart';
 import '../transitions/_transitions.dart';
 import '../pages/_pages.dart';
 import '../themes/app_theme.dart';
@@ -15,6 +15,8 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final cartProv = Provider.of<CartProvider>(context);
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(20),
@@ -28,14 +30,17 @@ class MyAppBar extends StatelessWidget {
             maintainSize: true,
             maintainAnimation: true,
             maintainState: true,
-            child: SquareButton(() {
-              Navigator.of(context).push(
-                MyCustomAnimatedRoute(
-                  enterWidget: const TransitionPage(CartPage()),
-                  alignment: const Alignment(0.8, -0.8),
-                ),
-              );
-            }, Icons.shopping_cart),
+            child: SquareButton(
+              () {
+                Navigator.of(context).push(
+                  MyCustomAnimatedRoute(
+                    enterWidget: const TransitionPage(CartPage()),
+                    alignment: const Alignment(0.8, -0.8),
+                  ),
+                );
+              },
+              Icons.shopping_cart,
+            ),
           ),
         ],
       ),

@@ -5,9 +5,9 @@ import 'package:provider/provider.dart';
 import '../models/_models.dart';
 import '../themes/app_theme.dart';
 import '../providers/_providers.dart';
-import '../transitions/_transitions.dart';
 import '../widgets/_widgets.dart';
-import '_pages.dart';
+// import '../transitions/_transitions.dart';
+// import '_pages.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -53,12 +53,7 @@ class CartPage extends StatelessWidget {
                 cartProv.pagoStatus = null;
                 cartProv.pop = false;
 
-                Navigator.of(context).push(
-                  MyCustomAnimatedRoute(
-                    enterWidget: const TransitionPage(PagoPage()),
-                    alignment: const Alignment(0, 0),
-                  ),
-                );
+                Navigator.pushNamed(context, 'pago');
               },
               hack: () {
                 final cartProv =

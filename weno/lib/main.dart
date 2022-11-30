@@ -30,6 +30,9 @@ class MyApp extends StatelessWidget {
         title: 'Weno',
         theme: AppTheme.theme,
         home: const SplashScreen(),
+        routes: {
+          'pago': (_) => const PagoPage(),
+        },
       ),
     );
   }

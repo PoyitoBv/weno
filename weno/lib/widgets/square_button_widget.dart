@@ -6,12 +6,14 @@ class SquareButton extends StatelessWidget {
   final Function() onTap;
   final IconData icon;
   final Color background;
+  final bool active;
 
   const SquareButton(
     this.onTap,
     this.icon, {
     super.key,
     this.background = AppTheme.white,
+    this.active = false,
   });
 
   @override
@@ -24,7 +26,7 @@ class SquareButton extends StatelessWidget {
           color: background,
           borderRadius: BorderRadius.circular(10),
         ),
-        child: Icon(icon, color: AppTheme.black),
+        child: Icon(icon, color: active ? AppTheme.red : AppTheme.black),
       ),
     );
   }

@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.weno">
+    package="com.example.weno.flutter.reto.poyo">
    <application
         android:label="WENO"
         android:name="${applicationName}"

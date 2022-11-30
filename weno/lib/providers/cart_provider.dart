@@ -68,7 +68,7 @@ class CartProvider extends ChangeNotifier {
 
   void _onStateChange(String stateMachineName, String stateName) async {
     if (stateName == 'Flotando') pagoVerify();
-    if (stateName == 'Rechazado') {
+    if (stateName == 'Rechazado' || stateName == 'Aceptado') {
       await Future.delayed(const Duration(seconds: 4));
 
       pop = true;
