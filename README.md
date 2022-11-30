@@ -5,6 +5,10 @@
 _Proyecto realizado para el reto: App #11 - Noviembre: BUON APPETITO (Le cambié el nombre a 'WENO')._
 _Consiste en hacen una aplicación para un negocio de pizzas en la cual puedas ordenar una pizza y personalizarla a tu gusto, una de sus caracteristicas principales sería que al personalizarla tienes la opcion de hacerlo con la pizza entera, mitad, cuartos o incluso combinaciones entre estas._
 
+## Proyecto
+
+[WENO](https://github.com/PoyitoBv/weno) - El proyecto se encuentra en este repositorio.
+
 ### Instalación 🔧
 
 _El apk se encuentra al mismo nivel que el README dentro del repositorio._
