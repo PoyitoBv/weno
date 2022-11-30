@@ -15,8 +15,6 @@ class MyAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cartProv = Provider.of<CartProvider>(context);
-
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(20),
