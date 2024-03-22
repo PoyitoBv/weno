@@ -6,6 +6,7 @@ import 'package:weno/themes/app_theme.dart';
 import 'package:weno/providers/_providers.dart';
 
 import 'pages/_pages.dart';
+import 'package:weno/pages/rive_test.dart';
 // import 'package:weno/pages/prueba.dart';
 
 ///! Errores
@@ -27,9 +28,10 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        showPerformanceOverlay: true,
         title: 'Weno',
         theme: AppTheme.theme,
-        home: const SplashScreen(),
+        home: const TestPage(),
         routes: {
           'pago': (_) => const PagoPage(),
         },
